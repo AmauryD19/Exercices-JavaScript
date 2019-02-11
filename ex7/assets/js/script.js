@@ -1,8 +1,8 @@
 function valider() {
     pointure = Number(document.getElementById("pointure").value);
     annee = Number(document.getElementById("annee").value);
-    pointure += pointure;
-    console.log(pointure);
+    resultat = pointure * 2;
+    console.log(resultat);
     resultat = pointure + 5;
     console.log(resultat);
     resultat *= 50;
