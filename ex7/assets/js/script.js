@@ -3,7 +3,7 @@ function valider() {
     annee = Number(document.getElementById("annee").value);
     resultat = pointure * 2;
     console.log(resultat);
-    resultat = pointure + 5;
+    resultat += 5;
     console.log(resultat);
     resultat *= 50;
     console.log(resultat);
