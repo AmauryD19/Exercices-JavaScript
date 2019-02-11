@@ -13,14 +13,15 @@
                 <button  id="valider" name ="valider">Valider</button>
         </form>
 
-        <script src="script.js"></script>
         <script>
-          window.onload = function() {
-                
-                document.getElementById("valider").onclick = function(e) {
-                   alert(document.getElementById("premier_nombre").value * document.getElementById("deuxieme_nombre").value)
-               }
-          }
+        document.getElementById("valider").onclick = function() {multiplication()};
+
+        function multiplication(){
+        nbr1 = parseInt(Number(document.getElementById("premier_nombre").value));
+        nbr2 = Number(document.getElementById("deuxieme_nombre").value);
+        window.alert("multiplication : "+(nbr1*nbr2)); 
+        }
         </script>
+        <script src="assets/js/script.js"></script>
 </body>
 </html>
