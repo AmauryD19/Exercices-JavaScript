@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex01</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="calcSurf" name="calcSurf">Calculer la surface d'un rectangle</button>
+        <button id="calcPeri" name="calcPeri">Calculer le périmètre du rectangle</button>
+    </div>
+
+    <script>
+        document.getElementById("calcSurf").onclick = function() {rectangleSurf()};
+        document.getElementById("calcPeri").onclick = function() {rectanglePeri()};
+    </script>
+
+    <script>
+        function rectangleSurf() {
+            var rectX = prompt('Quelle est la longueur du rectangle? (en m)');
+            console.log(rectX)
+            var rectY = prompt('Quelle est la hauteur du rectangle? (en m)');
+            console.log(rectY)
+            surface = rectX * rectY;
+            alert('La surface du rectangle est de '+surface+' m².')
+        }
+    </script>
+
+    <script>
+        function rectanglePeri() {
+            var rectX = prompt('Quelle est la longueur du rectangle? (en m)');
+            console.log(rectX);
+            var rectY = prompt('Quelle est la hauteur du rectangle? (en m)');
+            console.log(rectY);
+            width = rectX * 2;
+            console.log(width);
+            height = rectY * 2;
+            console.log(height);
+            perimeter = width + height;
+            alert('Le périmètre du rectangle est de '+perimeter+' m.')
+        }
+    </script>
+</body>
+</html>
