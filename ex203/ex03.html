@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex03</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="triple" name="triple">Valeur "x"</button>
+        <button id="show" name="show">Tripler</button>
+    </div>
+
+    <script>
+        var a = 3;
+        var b = 2;
+
+        document.getElementById("triple").onclick = function() {triple()};
+        function triple() {
+            x = prompt('Quelle est la valeur de "x" ?');
+            console.log(x);
+        };
+        
+        document.getElementById("show").onclick = function() {affiche()};
+        function affiche() {
+            x = parseInt(x);
+            
+            produitA = a * 3;
+            console.log(produitA);
+            produitB = b * 3;
+            console.log(produitB);
+            produitX = x * 3;
+            console.log(produitX);
+            alert('Le triple de '+x+' est égal à '+produitX+'.');
+            alert('Le triple de '+a+' est égal à '+produitA+'. CECI EST UN EXEMPLE.')
+            alert('le triple de '+b+' est égal à '+produitB+'. CECI EST UN EXEMPLE.')
+        };
+    </script>
+</body>
+</html>
