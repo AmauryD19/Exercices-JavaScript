@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ex01</title>
+    <title>Ex01</title>
 </head>
 <body>
     <div class="bloc_page">
         <button id="calcSurf" name="calcSurf">Calculer la surface d'un rectangle</button>
-        <button id="calcPeri" name="calcPeri">Calculer le périmètre du rectangle</button>
+        <button id="calcPeri" name="calcPeri">Calculer le périmètre d'un rectangle</button>
     </div>
 
     <script>
-        document.getElementById("calcSurf").onclick = function() {rectangleSurf()};
-        document.getElementById("calcPeri").onclick = function() {rectanglePeri()};
+        document.getElementById("calcSurf").onclick = function() {surfaceRectangle()};
+        document.getElementById("calcPeri").onclick = function() {periRectangle()};
     </script>
 
     <script>
-        function rectangleSurf() {
+        function surfaceRectangle() {
             var rectX = prompt('Quelle est la longueur du rectangle? (en m)');
             console.log(rectX)
             var rectY = prompt('Quelle est la hauteur du rectangle? (en m)');
@@ -29,7 +29,7 @@
     </script>
 
     <script>
-        function rectanglePeri() {
+        function periRectangle() {
             var rectX = prompt('Quelle est la longueur du rectangle? (en m)');
             console.log(rectX);
             var rectY = prompt('Quelle est la hauteur du rectangle? (en m)');

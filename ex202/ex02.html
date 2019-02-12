@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex02</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="calcSurf" name="calcSurf">Calculer la surface d'un cercle</button>
+    </div>
+
+    <script>
+        document.getElementById("calcSurf").onclick = function() {surfaceCircle()};
+    </script>
+
+    <script>
+        function surfaceCircle() {
+            var radius = prompt('Quel est le rayon du cercle ? (en m)');
+            console.log(radius);
+            surface = Math.pow(radius, 2);
+            console.log(surface)
+            surface *= Math.PI;
+            console.log(Math.PI);
+            alert('La surface du cercle est de '+surface+' m²')
+        }
+    </script>
+</body>
+</html>
