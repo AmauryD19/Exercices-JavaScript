@@ -12,13 +12,23 @@
     </div>
 
     <script>
-        var tab = [-2, 1, 4];
+        const tab = [-2, 1, 4];
 
-        function soustrait() {
-            return x-= 2;
-        };    document.getElementById("affiche").onclick = function() {affiche()};
+        document.getElementById("affiche").onclick = function() {affiche()};
 
-
+        function soustrait(x) {
+            if (x>=2) {
+                return x += -2;
+            }
+            else {
+                return 'Nombre négatif !';
+            }
+        };    
+    
+        function affiche() {
+            alert(soustrait(tab[tab.length-3]));
+            alert(soustrait(tab[tab.length-1]));
+        }
     </script>
 </body>
 </html>
