@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex04</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="affiche" names="affiche">Afficher</button>
+    </div>
+
+    <script>
+    var tab = [-2, 1, 4];
+
+    function additionne(x) {
+        return x+= 2;
+    };
+
+    document.getElementById("affiche").onclick = function() {affiche()};
+
+    function affiche() {
+        alert(additionne(tab[0]));
+        alert(additionne(tab[2]));
+    };
+    </script>
+</body>
+</html>
