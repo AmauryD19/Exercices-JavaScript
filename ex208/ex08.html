@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex08</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="weekDay" name="weekDay">Quel jour est-on ?</button>
+    </div>
+
+    <script>
+        document.getElementById("weekDay").onclick = function() {jourDeLaSemaine()};
+
+        function jourDeLaSemaine() {
+            let day;
+            
+            switch(new Date().getDay()) {
+                case 0:
+                    day = "dimanche";
+                    break;
+                case 1:
+                    day = "lundi";
+                    break;
+                case 2:
+                    day = "mardi";
+                    break;
+                case 3:
+                    day = "mercredi";
+                    break;
+                case 4:
+                    day = "jeudi";
+                    break;
+                case 5:
+                    day = "vendredi";
+                    break;
+                case 6:
+                    day = "samedi";
+                    break;
+            }
+            
+            alert("Aujourd'hui c'est "+day+".")
+        }
+    </script>
+</body>
+</html>
