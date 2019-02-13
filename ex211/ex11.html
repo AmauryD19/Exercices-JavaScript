@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex11</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="average" name="average">BOUTON OUI</button>
+    </div>
+
+    <script>
+    document.getElementById("average").onclick = function() {calculMoyenne()};
+
+    function calculMoyenne() {
+        do {
+        let x = Number(prompt('Chosis un nombre entier'));
+        test = x;
+        }
+        while((test - Math.floor(test)) != 0);
+        alert(x);
+    }
+    </script>
+</body>
+</html>
