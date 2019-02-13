@@ -15,8 +15,9 @@
     document.getElementById("average").onclick = function() {calculMoyenne()};
 
     function calculMoyenne() {
+        let x;
         do {
-        let x = Number(prompt('Chosis un nombre entier'));
+        x = Number(prompt('Chosis un nombre entier'));
         test = x;
         }
         while((test - Math.floor(test)) != 0);

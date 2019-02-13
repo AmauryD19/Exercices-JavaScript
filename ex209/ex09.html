@@ -12,12 +12,13 @@
     </div>
 
     <script>
+        let word;
         document.getElementById("test").onclick = function() {testWhile()};
         
         function testWhile() {
             do {
-                let word = prompt('Dis-moi un mot contenant la lettre "P"')
-                test = word.search('p');
+                word = prompt('Dis-moi un mot contenant la lettre "P"')
+                test = word.search("p") && word.search("P");
             }
             while(test<0);
             alert(word);
