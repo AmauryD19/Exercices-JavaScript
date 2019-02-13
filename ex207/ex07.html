@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="choice" name="choice">Un, deux ou trois?</button>
+    </div>
+
+    <script>
+        document.getElementById("choice").onclick = function() {choice()};
+
+        function choice () {
+            const x = Number(prompt('1, 2 ou 3 ?'));
+
+            if (x===1) {
+                alert('1. Merci');
+            }   
+            else if (x===2) {
+                alert('2. Bonjour');
+            }   
+            else if (x===3) {
+                alert('3. Au revoir');
+                }
+            else {
+                alert('Sumimasen, nani the fuck ?') /*Pardon, que voulez-vous?*/
+            }
+        }
+    </script>
+</body>
+</html>
