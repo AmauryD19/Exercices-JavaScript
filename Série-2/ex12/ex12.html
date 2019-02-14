@@ -8,11 +8,64 @@
 </head>
 <body>
     <div class="bloc_page">
-        <button id="temperature" name="temperature">Convertir la température</button>
+        
+        <ol>
+            <ul>0 = Fin du programme</ul>
+            <ul>1 = De Celsius vers Fahrenheit</ul>
+            <ul>2 = De Celsius vers Kelvin</ul>
+            <ul>3 = De Fahrenheit vers Celsius</ul>
+            <ul>4 = De Fahrenheit vers Kelvin</ul>
+            <ul>5 = De Kelvin vers Celsius</ul>
+            <ul>6 = De Kelvin vers Fahrenheit</ul>
+        </ol>
+        <button id="temperature" name="temperature">Convertir</button>
     </div>
 
     <script>
-    
+    document.getElementById("temperature").onclick = function() {conversionTemperature()};
+
+    function conversionTemperature(){
+        do {
+            operator = prompt("Quelle conversion veux tu effectuer?");
+        }
+        while ((operator>6))
+
+        switch(Number(operator)) {
+            case 0 : 
+                alert('Fin du programme.');
+                break;
+            case 1 :
+                temperature = Number(prompt('Quelle est la valeur de la température en °C à convertir ?'));
+                conversion = (temperature * 9/5) + 32;
+                alert(temperature+"°C = "+conversion+"°F.");
+                break;
+            case 2 :
+                temperature = Number(prompt('Quelle est la valeur de la température en °C à convertir ?'));
+                conversion = temperature + 273.15;
+                alert(temperature+"°C = "+conversion+"°K.");
+                break;
+            case 3 :
+                temperature = Number(prompt('Quelle est la valeur de la température en °F à convertir ?'));
+                conversion = (temperature - 32) / (9/5);
+                alert(temperature+"°F = "+conversion+"°C.");
+                break;
+            case 4 :
+                temperature = Number(prompt('Quelle est la valeur de la température en °F à convertir ?'));
+                conversion = ((temperature - 32) * (5/9)) + 273.15;
+                alert(temperature+"°F = "+conversion+"°K.");
+                break;
+            case 5 :
+                temperature = Number(prompt('Quelle est la valeur de la température en °K à convertir ?'));
+                conversion = temperature - 273.15;
+                alert(temperature+"°K = "+conversion+"°C.");
+                break;
+            case 6 :
+                temperature = Number(prompt('Quelle est la valeur de la température en °K à convertir ?'));
+                conversion = (temperature * 9/5) - 459.67;
+                alert(temperature+"°K = "+conversion+"°F.");
+                break;
+        }
+    }
     </script>
 </body>
 </html>
