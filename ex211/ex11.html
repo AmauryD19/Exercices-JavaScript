@@ -14,14 +14,32 @@
     <script>
     document.getElementById("average").onclick = function() {calculMoyenne()};
 
+    
     function calculMoyenne() {
+        let somme = 0;
         let x;
-        do {
-        x = Number(prompt('Chosis un nombre entier'));
-        test = x;
+        let i;
+
+        for (i=0; i>=0  ; i++) {
+            x = Number(prompt('Choisis un nombre.')); 
+
+            if (x<0) {
+                alert("Ce nombre n'est pas un entier positif.")
+            }
+            else if (Number.isInteger(x)) {
+                somme += x;
+                console.log(somme);
+            }
+            else {
+                alert("Ce nombre n'est pas un entier.")
+            }
+
+            if (x<0) {
+                let moyenne = somme/i;
+                alert("Le nombre d'entiers positifs est de "+i+". \n"+"La moyenne est de "+moyenne+".  ")
+                break;
+            }
         }
-        while((test - Math.floor(test)) != 0);
-        alert(x);
     }
     </script>
 </body>
