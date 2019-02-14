@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex13</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <button id="indiceMC" name="indiceMC">Calcules ton IMC</button>
+    </div>
+
+    <script>
+    document.getElementById("indiceMC").onclick = function() {calculIMC()};
+
+    function calculIMC() {
+        let weight;
+        let size;
+        let mathSize;
+        let imc;
+
+        do {
+        weight = Number(prompt("Quel est, en kilogrammes, ton poids ?"));
+        }
+
+        while(weight<=1);
+        do {
+            size = Number(prompt("Combien, en mètres, mesures-tu ?"));
+        } while((size<=1) || (size>=3));
+        mathSize = size * size;
+        imc = weight / mathSize;
+        console.log(size);
+        console.log(mathSize);
+        console.log(weight);
+        console.log(imc);
+        if(imc<16.5) {
+            alert('Dénutrition ou famine.');
+        }
+        else if((imc>=16.5) && (imc<18.5)) {
+            alert('Maigreur.');  
+        } 
+        else if((imc>=18.5) && (imc<25)) {
+            alert('Corpulence normale.');    
+        }
+        else if((imc>=25) && (imc<30)) {
+            alert('Surpoids.');
+        }
+        else if((imc>=30) && (imc<35)) {
+            alert('Obésité modérée.');
+        }
+        else if((imc>=35) && (imc<40)) {
+            alert('Obésité sévère.');
+        }
+        else {
+            alert('Obésité morbide.');
+        }
+    }
+    </script>
+</body>
+</html>
