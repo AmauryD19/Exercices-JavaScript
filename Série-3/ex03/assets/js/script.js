@@ -1,6 +1,5 @@
-document.getElementById("nom").addEventListener("onkeypress", dialogue);
+document.getElementById("nom").addEventListener("keypress", dialogue);
 
 function dialogue() {
-    name = document.getElementById("nom").value;
-    alert(name);
+    name = alert(document.getElementById("nom").value);
 }

@@ -1,4 +1,4 @@
-document.getElementById("nom").addEventListener("onfocusout", message);
+document.getElementById("nom").addEventListener("blur", message);
 
 function message(){
     alert("Merci pour votre participation !");
