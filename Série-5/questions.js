@@ -27,7 +27,7 @@ var minusculeString = function (texte) {
     return texte.toLowerCase();
 }
 var SupprEspaceString = function (texte) {
-    return texte.trim();   
+    return texte.trim();   /*trim supprime les espaces au début et en fin de string*/
 }
 var IsString = function (texte) {
     return typeof texte === "string";
