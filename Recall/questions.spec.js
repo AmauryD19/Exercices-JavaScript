@@ -4,27 +4,27 @@ describe('javascript-Recall', function() {
 
     it('selects elements starting with A', function() {
         var result = selectElementsStartingWithA(['bananas', 'apples', 'pears', 'avocados']);
-        expect(result).toEqual(['apples', 'avocados']);
+        expect(result).toEqual(['apples', 'avocados']); /* Done */
     });
 
     it('selects elements starting with a vowel', function() {
         var result = selectElementsStartingWithVowel(['john', 'david', 'omar', 'fred', 'idris', 'angela']);
-        expect(result).toEqual(['omar', 'idris', 'angela']);
+        expect(result).toEqual(['omar', 'idris', 'angela']); /* Done */
     });
 
     it('removes null values from an array', function() {
         var result = removeNullElements(['a', 'b', null, null, false, 0]);
-        expect(result).toEqual(['a', 'b', false, 0]);
+        expect(result).toEqual(['a', 'b', false, 0]); /* Done */
     });
 
     it('removes null and false values from an array', function() {
         var result = removeNullAndFalseElements(['a', 'b', null, null, false, 0]);
-        expect(result).toEqual(['a', 'b', 0]);
+        expect(result).toEqual(['a', 'b', 0]); /* Done */
     });
 
     it('reverses the letters of each element in an array', function() {
         var result = reverseWordsInArray(['dog', 'monkey', 'elephant', 'kayak']);
-        expect(result).toEqual(['god', 'yeknom', 'tnahpele', 'kayak']);
+        expect(result).toEqual(['god', 'yeknom', 'tnahpele', 'kayak']); /* Done */
     });
 
     it('makes every possible pairing of students', function() {

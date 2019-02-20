@@ -7,14 +7,15 @@ var selectElementsStartingWithVowel = function(array) {
 }
 
 var removeNullElements = function(array) {
-    return array.filter((element) => element!=null);
+    return array.filter((element) => element!==null);
 }
 
 var removeNullAndFalseElements = function(array) {
+    return array.filter((element) => element!==false).filter((element) => element!==null);
 }
 
-var reverseWordsInArray = function(array) {
-    return 'Write your method here';
+var reverseWordsInArray = function(array) { 
+    return array.join().split("").reverse().join("").split(',').reverse();
 }
 
 var everyPossiblePair = function(array) {
