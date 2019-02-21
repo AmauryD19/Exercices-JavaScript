@@ -19,43 +19,43 @@ var reverseWordsInArray = function(array) {
 }
 
 var everyPossiblePair = function(array) {
-    return 'Write your method here';
+    test1 = array.sort();
 }
 
 var allElementsExceptFirstThree = function(array) {
-    return 'Write your method here';
+    return array.splice(3);
 }
 
 var addElementToBeginning = function(array, element) {
-    return 'Write your method here';
+    array.unshift(element)
+    return array;
 }
 
 var sortByLastLetter = function(array) {
-    return 'Write your method here';
 }
 
 var getFirstHalf = function(string) {
-    return 'Write your method here';
+    return string.slice(0, Math.round((string.length/2)));
 }
 
 var makeNegative = function(number) {
-    return 'Write your method here';
+    return -Math.abs(number);    
 }
 
 var numberOfPalindromes = function(array) {
-    return 'Write your method here';
+    return 
 }
 
 var shortestWord = function(array) {
-    return 'Write your method here';
+    return array.reduce((a, b) => a.length <= b.length ? a : b);
 }
 
 var longestWord = function(array) {
-    return 'Write your method here';
+    return array.reduce((a, b) => a.length <= b.length ? b : a);
 }
 
 var sumNumbers = function(array) {
-    return 'Write your method here';
+    return array.reduce((a, b) => a + b);
 }
 
 var repeatElements = function(array) {

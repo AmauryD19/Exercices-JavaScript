@@ -33,23 +33,23 @@ describe('javascript-Recall', function() {
         expect(result).toEqual([
             ['Daenerys', 'Jon'],
             ['Daenerys', 'Tyrion'],
-            ['Jon', 'Tyrion']
+            ['Jon', 'Tyrion'] /* OOF */
         ]);
     });
 
     it('takes all elements except the first 3', function() {
         var result = allElementsExceptFirstThree([1, 2, 3, 4, 5, 6, 7, 8]);
-        expect(result).toEqual([4, 5, 6, 7, 8]);
+        expect(result).toEqual([4, 5, 6, 7, 8]); /* Done */
     });
 
     it('adds an element to the beginning of an array', function() {
         var result = addElementToBeginning([2, 3, 4, 5], 1);
-        expect(result).toEqual([1, 2, 3, 4, 5]);
+        expect(result).toEqual([1, 2, 3, 4, 5]); /* Done*/
     });
 
     it('sorts an array by the last letter of each word', function() {
         var result = sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen']);
-        expect(result).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
+        expect(result).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']); /* Done */
     });
 
     it('gets the first half of a string', function() {
@@ -57,7 +57,7 @@ describe('javascript-Recall', function() {
         var resultTwo = getFirstHalf('snake');
 
         expect(resultOne).toEqual('dra');
-        expect(resultTwo).toEqual('sna');
+        expect(resultTwo).toEqual('sna'); /* Done */
     });
 
     it('makes numbers negative', function() {
@@ -65,7 +65,7 @@ describe('javascript-Recall', function() {
         var resultTwo = makeNegative(-5);
 
         expect(resultOne).toEqual(-5);
-        expect(resultTwo).toEqual(-5);
+        expect(resultTwo).toEqual(-5); /* Done */
     });
 
     it('counts elements in an array that are palindromes', function() {
@@ -75,17 +75,17 @@ describe('javascript-Recall', function() {
 
     it('returns the shortest word in an array', function() {
         var result = shortestWord(['winter', 'is', 'coming']);
-        expect(result).toEqual('is');
+        expect(result).toEqual('is'); /* Done */
     });
 
     it('returns the longest word in an array', function() {
         var result = longestWord(['A', 'Lannister', 'always', 'pays', 'his', 'debts'])
-        expect(result).toEqual('Lannister');
+        expect(result).toEqual('Lannister'); /* Done */
     });
 
     it('sums up the numbers in an array', function() {
         var result = sumNumbers([1, 3, 5, 6, 2, 8]);
-        expect(result).toEqual(25);
+        expect(result).toEqual(25); /* Done */
     });
 
     it('repeats the elements of an array', function() {
