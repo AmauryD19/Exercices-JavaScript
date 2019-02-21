@@ -19,7 +19,7 @@ var reverseWordsInArray = function(array) {
 }
 
 var everyPossiblePair = function(array) {
-    test1 = array.sort();
+    test1 = array.sort();//Yikes
 }
 
 var allElementsExceptFirstThree = function(array) {
@@ -44,7 +44,7 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-    return 
+    return //Yikes
 }
 
 var shortestWord = function(array) {
@@ -60,23 +60,23 @@ var sumNumbers = function(array) {
 }
 
 var repeatElements = function(array) {
-    return 'Write your method here';
+    return array.concat(array);
 }
 
 var stringToNumber = function(string) {
-    return 'Write your method here';
+    return Number(string);
 }
 
 var calculateAverage = function(array) {
-    return 'Write your method here';
+    return ; //Yikes
 }
 
 var getElementsUntilGreaterThanFive = function(array) {
-    return 'Write your method here';
+    return array.splice(0, 6);
 }
 
 var convertArrayToObject = function(array) {
-    return 'Write your method here';
+    //return Object.assign({}, array); //Yikes
 }
 
 var getAllLetters = function(array) {
