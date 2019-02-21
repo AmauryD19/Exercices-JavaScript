@@ -32,6 +32,7 @@ var addElementToBeginning = function(array, element) {
 }
 
 var sortByLastLetter = function(array) {
+    return array.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 }
 
 var getFirstHalf = function(string) {
