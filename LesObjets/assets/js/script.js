@@ -24,7 +24,7 @@ let shop = 	["Luden's Echo", "Infinity Edge","Rabadon", "Liandry", "Runaan"];
 shop[0] = {
 	title : shop[0],
 	physic : 0,
-	magic : 50,
+	magic : 50,	
 	minLevel : 5,
 	available : true
 }

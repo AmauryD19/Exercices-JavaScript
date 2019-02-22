@@ -154,7 +154,7 @@ describe('javascript-Recall', function() {
 
     it('rounds up a number', function() {
         var result = roundUp(4.3942);
-        expect(result).toEqual(5);
+        expect(result).toEqual(5); /* Done */
     });
 
     it('formats a date nicely', function() {
