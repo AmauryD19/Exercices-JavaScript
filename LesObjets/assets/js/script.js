@@ -1,13 +1,12 @@
 /* PNJ */
-
 let character = {
     name : "Jerrome",
     age : 27,
-    items_to_give : ["Doran's Ring", "Health Potion", "Perfect Hex Core"],
+    items_to_give : ["l'épée de Jerrome", "le baton de Jerrome", "l'arc de Jerrome"],
     giveItem : function() {
         let randomItem = character.items_to_give[Math.floor(Math.random() * character.items_to_give.length)];
-        console.log(randomItem);
-    }
+		console.log(randomItem);
+	},
 }
 
 for(let allItems in character.items_to_give) {
@@ -15,7 +14,7 @@ for(let allItems in character.items_to_give) {
 
 }
 
-character.giveItem();
+let giftedItem = character.giveItem();
 
 /* SHOP */
 
@@ -57,7 +56,40 @@ shop[4] = {
 	available : false
 }
 
+document.getElementById('shopAll').addEventListener('click', showShop);
+
 function showShop() {
-	return itemAvailable === true;;
+	for (i=0; i<shop.length; i++) {
+		console.log(shop[i].title);
+	}
+}
+
+document.getElementById('shopStock').addEventListener('click', showShopStock);
+
+function showShopStock() {
+	for (i=0; i<shop.length; i++) {
+		if (shop[i].available=== true) {
+			console.log(shop[i].title);
+		}
+	};
+}
+
+document.getElementById('shopLevel10').addEventListener('click', showShop10);
+
+function showShop10() {
+	for (i=0; i<shop.length; i++) {
+		if (shop[i].minLevel<=10) {
+			console.log(shop[i].title);
+		}
+	}
+}
+
+/* Le main character */
+
+let mainCharacter = {
+	name : "Jerrard",
+	level : 12,
+	life : 1000,
+	
 }
 
