@@ -90,6 +90,23 @@ let mainCharacter = {
 	name : "Jerrard",
 	level : 12,
 	life : 1000,
-	
+	weapon : {name : "un clou", damage: 50},
+	attack : function() {
+		console.log(mainCharacter.name + ' assène un violent coup avec ' + mainCharacter.weapon.name + ' et inflige ' +mainCharacter.weapon.damage*mainCharacter.level+ ' dégats.');
+	}
 }
 
+
+mainCharacter.attack();
+
+/* l'ennemi */
+
+let hostileCharacter = {
+	name : "Jerry",
+	level : 6,
+	life : 800,
+	weapon : {name : "un caillou", damage: 5},
+	hostileAttack : function() {
+		
+	}
+}
