@@ -44,7 +44,14 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-    return //Yikes
+    let count = 0;
+    for(let i =0; i<array.length; i++){
+      array[i]=array[i].split("");  
+      if(array[i].join("")===array[i].reverse().join("")){
+        count++;
+      }
+    }
+    return count;
 }
 
 var shortestWord = function(array) {
@@ -76,11 +83,20 @@ var getElementsUntilGreaterThanFive = function(array) {
 }
 
 var convertArrayToObject = function(array) {
-    //return Object.assign({}, array); //Yikes
+    let obj = {};
+    for(let i = 0; i < array.length; i = i + 2){
+
+        obj[array[i]] = array[ i + 1 ];
+
+    }
+    return obj;
 }
 
 var getAllLetters = function(array) {
-    return ;
+    array = array.join("").split("").sort();
+  
+    let x = (array) => array.filter((v, i) => array.indexOf(v) === i);
+    return x(array);
 }
 
 var swapKeysAndValues = function(object) {
@@ -92,7 +108,7 @@ var sumKeysAndValues = function(object) {
 }
 
 var removeCapitals = function(string) {
-    return string.replace(/(?![a-z])./g, ''); /*Why space deleted*/
+    return string.replace(/(?![a-z ])./g, '');
 }
 
 var roundUp = function(number) {
@@ -108,11 +124,17 @@ var getDomainName = function(string) {
 }
 
 var titleize = function(string) {
-    return 'Write your method here';
+    return string.titleize();
 }
 
 var checkForSpecialCharacters = function(string) {
-    return 'Write your method here';
+    let format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
+    if( string.match(format) ){
+      return true;
+    }else{
+      return false;
+    }
 }
 
 var squareRoot = function(number) {
@@ -132,5 +154,13 @@ var convertToCelsius = function(number) {
 }
 
 var letterPosition = function(array) {
-    return ;
+    tab = [];
+    for (let i = 0; i < array.length; i++) {
+
+        let tst = array[i].toString().toLowerCase();
+        let r = tst.charCodeAt(0) - 96;
+
+        tab.push(r);
+    }
+    return tab;
 }
